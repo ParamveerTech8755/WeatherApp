@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
+	<link rel="stylesheet"
+	 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+<div class="container">
+	<div class="search">
+		<form action="/" method="POST">
+			<input placeholder="Enter city name" name="city" spellcheck="false" />
+			<button type="submit">
+				<span class="material-symbols-outlined">search</span>
+			</button>
+		</form>
+	</div>
+	<div class="details">
+		<div id="icon_div">
+			<img id='icon' src= <%= 'images/' + desc.toLowerCase() + '.png' %> />
+			<div id="desc"><%= desc %></div>
+		</div>
+		<div id="temp_div">
+			<div id="temp"><%= temp %> &deg;C</div>
+			<div id="city_name"><%= city_name %></div>
+		</div>
+		<div class="bottom-row">
+			<div>
+				<img class="image humidity" src="images/humidity.png" />
+				<span><%= humidity %></span>
+			</div>
+			<div>
+				<img src="images/wind.png" class="image wind" />
+				<span><%= wind_speed %></span>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

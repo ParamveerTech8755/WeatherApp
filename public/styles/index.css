@@ -1,0 +1,109 @@
+*{
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #222;
+}
+div.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: linear-gradient(135deg, #00feba, #5b548a);
+	border-radius: 10px;
+	height: 65%;
+	width: 25%;
+	min-width: 250px;
+}
+input[name="city"]{
+	border: none;
+	border-radius: 18px;
+	margin: 0 10px;
+	width: 80%;
+	padding: 10px 10px;
+}
+input[name="city"]:focus{
+	border:none;
+	outline:none;
+	background-color: #222;
+	color: #fff;
+}
+button[type="submit"]{
+	border-radius: 100%;
+	border: none;
+	padding: 4px 6px;
+}
+button[type="submit"]:hover{
+	background: #ccc;
+}
+.search > form{
+	display: flex;
+	padding: 20px 18px 0 18px;
+	justify-content: center;
+	align-items: center;
+}
+.details{
+	display:flex;
+	color: whitesmoke;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 16px 10px;
+}
+/*.detiails > *{
+	padding: 0;
+	margin: 0;
+}*/
+#icon_div{
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	max-height: 50%;
+}
+.bottom-row{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	padding: 10px 0;
+	font-size: 1.4em;
+}
+.bottom-row > div{
+	margin: 0;
+}
+#icon{
+	height: 80%;
+	width: auto;
+}
+#desc{
+	position: relative;
+	top: -15px;
+}
+#temp_div{
+	text-align: center;
+}
+#temp{
+	padding-bottom: 10px;
+	font-size: 2em;
+}
+#city_name{
+	padding-top: 10px;
+	font-size: 1.4em;
+}
+.image{
+	height: 30px;
+	width: 30px;
+	position: relative;
+	top: 8px;
+	margin-right: 5px;
+}
